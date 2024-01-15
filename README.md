@@ -56,6 +56,15 @@ The application will start running at `http://localhost:8080`.
 
 This application uses Basic Authentication with in-memory user details for securing the endpoints. Currently, there are two default users:
 
+- User:
+    - Username: user
+    - Password: 4s3r
+    - Roles: USER
+- Admin:
+    - Username: admin
+    - Password: @dm1n
+    - Roles: USER, ADMIN
+
 - User: Has access to customer endpoints.
 - Admin: Has access to both customer and transaction endpoints.
 

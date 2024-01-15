@@ -11,16 +11,33 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
-      ddl-auto:update
+      ddl-auto: update
 
 #In memory default users configuration
 security:
   users:
     admin:
-      username: Admin
+      username: admin
       password: "@dm1n"
       role: ADMIN
     user:
-      username: User
+      username: user
       password: "4s3r"
       role: USER
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info,health,prometheus
+  health:
+    readinessState:
+      enabled: true
+    livenessState:
+      enabled: true
+  endpoint:
+    health:
+      probes:
+        enabled: true
+    prometheus:
+      enabled: true
