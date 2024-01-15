@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: assingnment-postgres-container
+    environment:
+      POSTGRES_DB: assignmentDb
+      POSTGRES_USER: devUser
+      POSTGRES_PASSWORD: devPass
+    ports:
+      - "5432:5432"

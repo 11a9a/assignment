@@ -1,0 +1,26 @@
+spring:
+  # Database configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/assignmentDb
+    username: devUser
+    password: devPass
+
+  # Hibernate configuration
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto:update
+
+#In memory default users configuration
+security:
+  users:
+    admin:
+      username: Admin
+      password: "@dm1n"
+      role: ADMIN
+    user:
+      username: User
+      password: "4s3r"
+      role: USER
