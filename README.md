@@ -64,7 +64,7 @@ This application uses Basic Authentication with in-memory user details for secur
 - Admin:
     - Username: admin
     - Password: @dm1n
-    - Roles: USER, ADMIN
+    - Roles: ADMIN
 
 - User: Has access to customer endpoints.
 - Admin: Has access to both customer and transaction endpoints.
