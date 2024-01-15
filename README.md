@@ -37,9 +37,10 @@ Please ensure that Docker is installed and running on your machine before execut
 
 ### Running the Application
 
-1. Navigate to the project directory: `cd assingment`
-2. Build the project: `gradle build`
-3. Run the application: `gradle bootRun`
+1. Clone the project: `git clone https://github.com/11a9a/assignment.git`
+2. Navigate to the project directory: `cd assingment`
+3. Build the project: `gradle build`
+4. Run the application: `gradle bootRun`
 
 The application will start running at `http://localhost:8080`.
 
